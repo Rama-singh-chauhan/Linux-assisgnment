@@ -1,0 +1,646 @@
+Last login: Wed Jan  7 13:23:13 on ttys000
+
+------ 1. Creating and Renaming Files/Directories-------------------
+ramachauhan@Ramas-MacBook-Air ~ % mkdir test_dir
+ramachauhan@Ramas-MacBook-Air ~ % cd test_dir
+ramachauhan@Ramas-MacBook-Air test_dir % touch example.txt
+ramachauhan@Ramas-MacBook-Air test_dir % mv example.txt renamed_example.txt
+ramachauhan@Ramas-MacBook-Air test_dir % cat/etc/passwd
+zsh: no such file or directory: cat/etc/passwd
+
+----------------2. Viewing File Contents------------------------
+ramachauhan@Ramas-MacBook-Air test_dir % cat /etc/passwd
+
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
+_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
+_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
+_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
+_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
+_appstore:*:33:33:Mac App Store Service:/var/db/appstore:/usr/bin/false
+_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
+_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
+_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
+_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
+_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
+_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
+_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
+_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
+_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
+_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
+_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
+_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
+_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
+_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
+_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
+_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
+_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
+_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
+_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
+_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
+_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
+_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
+_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
+_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
+_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false
+_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
+_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
+_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
+_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
+_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
+_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
+_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
+_softwareupdate:*:200:200:Software Update Service:/var/db/softwareupdate:/usr/bin/false
+_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
+_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
+_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
+_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
+_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
+_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
+_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
+_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
+_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
+_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
+_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
+_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
+_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
+_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
+_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
+_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
+_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
+_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
+_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
+_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false
+_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false
+_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false
+_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false
+_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
+_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
+_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false
+_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash
+_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false
+_xserverdocs:*:251:251:macOS Server Documents Service:/var/empty:/usr/bin/false
+_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false
+_mobileasset:*:253:253:MobileAsset User:/var/ma:/usr/bin/false
+_findmydevice:*:254:254:Find My Device Daemon:/var/db/findmydevice:/usr/bin/false
+_datadetectors:*:257:257:DataDetectors:/var/db/datadetectors:/usr/bin/false
+_captiveagent:*:258:258:captiveagent:/var/empty:/usr/bin/false
+_ctkd:*:259:259:ctkd Account:/var/empty:/usr/bin/false
+_applepay:*:260:260:applepay Account:/var/db/applepay:/usr/bin/false
+_hidd:*:261:261:HID Service User:/var/db/hidd:/usr/bin/false
+_cmiodalassistants:*:262:262:CoreMedia IO Assistants User:/var/db/cmiodalassistants:/usr/bin/false
+_analyticsd:*:263:263:Analytics Daemon:/var/db/analyticsd:/usr/bin/false
+_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false
+_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false
+_nearbyd:*:268:268:Proximity and Ranging Daemon:/var/db/nearbyd:/usr/bin/false
+_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false
+_driverkit:*:270:270:DriverKit:/var/empty:/usr/bin/false
+_diskimagesiod:*:271:271:DiskImages IO Daemon:/var/db/diskimagesiod:/usr/bin/false
+_logd:*:272:272:Log Daemon:/var/db/diagnostics:/usr/bin/false
+_appinstalld:*:273:273:App Install Daemon:/var/db/appinstalld:/usr/bin/false
+_installcoordinationd:*:274:274:Install Coordination Daemon:/var/db/installcoordinationd:/usr/bin/false
+_demod:*:275:275:Demo Daemon:/var/empty:/usr/bin/false
+_rmd:*:277:277:Remote Management Daemon:/var/db/rmd:/usr/bin/false
+_accessoryupdater:*:278:278:Accessory Update Daemon:/var/db/accessoryupdater:/usr/bin/false
+_knowledgegraphd:*:279:279:Knowledge Graph Daemon:/var/db/knowledgegraphd:/usr/bin/false
+_coreml:*:280:280:CoreML Services:/var/db/coreml:/usr/bin/false
+_sntpd:*:281:281:SNTP Server Daemon:/var/empty:/usr/bin/false
+_trustd:*:282:282:trustd:/var/empty:/usr/bin/false
+_mmaintenanced:*:283:283:mmaintenanced:/var/db/mmaintenanced:/usr/bin/false
+_darwindaemon:*:284:284:Darwin Daemon:/var/db/darwindaemon:/usr/bin/false
+_notification_proxy:*:285:285:Notification Proxy:/var/empty:/usr/bin/false
+_avphidbridge:*:288:288:Apple Virtual Platform HID Bridge:/var/empty:/usr/bin/false
+_biome:*:289:289:Biome:/var/db/biome:/usr/bin/false
+_backgroundassets:*:291:291:Background Assets Service:/var/empty:/usr/bin/false
+_mobilegestalthelper:*:293:293:MobileGestaltHelper:/var/empty:/usr/bin/false
+_audiomxd:*:294:294:Audio and MediaExperience Daemon:/var/db/audiomxd:/usr/bin/false
+_terminusd:*:295:295:Terminus:/var/db/terminus:/usr/bin/false
+_neuralengine:*:296:296:AppleNeuralEngine:/var/db/neuralengine:/usr/bin/false
+_eligibilityd:*:297:297:OS Eligibility Daemon:/var/db/eligibilityd:/usr/bin/false
+_systemstatusd:*:298:298:SystemStatus Services:/var/empty:/usr/bin/false
+_aonsensed:*:300:300:Always On Sense Daemon:/var/db/aonsensed:/usr/bin/false
+_modelmanagerd:*:301:301:Model Manager:/var/db/modelmanagerd:/usr/bin/false
+_reportsystemmemory:*:302:302:ReportSystemMemory:/var/empty:/usr/bin/false
+_swtransparencyd:*:303:303:Software Transparency Services:/var/db/swtransparencyd:/usr/bin/false
+_naturallanguaged:*:304:304:Natural Language Services:/var/db/com.apple.naturallanguaged:/usr/bin/false
+_corespeechd:*:306:306:CoreSpeech Services:/var/empty:/usr/bin/false
+_diagnosticservicesd:*:307:307:Diagnostic Services:/var/empty:/usr/bin/false
+_oahd:*:441:441:OAH Daemon:/var/empty:/usr/bin/false
+ramachauhan@Ramas-MacBook-Air test_dir % head -n 5/etc/passwd
+head: illegal line count -- 5/etc/passwd
+ramachauhan@Ramas-MacBook-Air test_dir % head -n 5 /etc/passwd
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+ramachauhan@Ramas-MacBook-Air test_dir % tail -n 5 /etc/passwd
+_swtransparencyd:*:303:303:Software Transparency Services:/var/db/swtransparencyd:/usr/bin/false
+_naturallanguaged:*:304:304:Natural Language Services:/var/db/com.apple.naturallanguaged:/usr/bin/false
+_corespeechd:*:306:306:CoreSpeech Services:/var/empty:/usr/bin/false
+_diagnosticservicesd:*:307:307:Diagnostic Services:/var/empty:/usr/bin/false
+_oahd:*:441:441:OAH Daemon:/var/empty:/usr/bin/false
+
+------------3.Searching for Patterns----------------
+
+ramachauhan@Ramas-MacBook-Air test_dir % grep "root" /etc/passwd
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+
+
+
+ramachauhan@Ramas-MacBook-Air test_dir % cd..
+zsh: command not found: cd..
+ramachauhan@Ramas-MacBook-Air test_dir % cd ..
+
+--------4. Zipping and Unzipping------------
+ramachauhan@Ramas-MacBook-Air ~ % zip -r test_dir.zip test_dir
+  adding: test_dir/ (stored 0%)
+  adding: test_dir/renamed_example.txt (stored 0%)
+ramachauhan@Ramas-MacBook-Air ~ % unzip  test_dir.zip -d  unzipped_dir
+Archive:  test_dir.zip
+   creating: /Users/ramachauhan/unzipped_dir/test_dir
+ extracting: unzipped_dir/test_dir/renamed_example.txt
+ramachauhan@Ramas-MacBook-Air ~ % wget https://example.com/sample.txt
+zsh: command not found: wget
+ramachauhan@Ramas-MacBook-Air ~ % wgethttps://example.com/sample.txt
+zsh: no such file or directory: wgethttps://example.com/sample.txt
+ramachauhan@Ramas-MacBook-Air ~ % wget https://example.com/sample.txt
+zsh: command not found: wget
+ramachauhan@Ramas-MacBook-Air ~ % curl https://example.com/sample.txt
+curl: (35) Recv failure: Connection reset by peer
+ramachauhan@Ramas-MacBook-Air ~ % curl -O https://example.com/sample.txt
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (35) Recv failure: Connection reset by peer
+
+
+--------install the wget ------------
+
+
+ramachauhan@Ramas-MacBook-Air ~ % brew install wget
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:1c98fa49eacc935640a6f8e10a2bf33f14cfc276804b71ddb658ea45ba99d167
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.arm64_big_sur.bottle.tar.gz
+==> Auto-updated Homebrew!
+Updated 3 taps (weaveworks/tap, homebrew/core and homebrew/cask).
+==> New Formulae
+adplay: Command-line player for OPL2 music
+ansible@12: Automate deployment, configuration, and upgrading
+any2fasta: Convert various sequence formats to FASTA
+astra: Command-Line Interface for DataStax Astra
+auto-editor: Effort free video editing!
+av1an: Cross-platform command-line encoding framework
+aws-spiffe-workload-helper: Helper for providing AWS credentials to workloads using their SPIFFE identity
+azure-dev: Developer CLI that provides commands for working with Azure resources
+azurite: Lightweight server clone of Azure Storage that simulates it locally
+beads: Memory upgrade for your coding agent
+beads_viewer: Terminal-based UI for the Beads issue tracker
+bookokrat: Terminal EPUB Book Reader
+bumpp: Interactive CLI that bumps your version numbers and more
+calm-cli: CLI allows you to interact with the Common Architecture Language Model (CALM)
+cargo-features-manager: TUI like cli tool to manage the features of your rust-project dependencies
+carl: Calendar for the command-line
+ccextractor: Tool for extracting closed captions from video files
+cek: Explore the (overlay) filesystem and layers of OCI container images
+cinecli: Browse, inspect, and launch movie torrents directly from your terminal
+classifier: Text classification with Bayesian, LSI, Logistic Regression, and kNN
+codanna: Code intelligence system with semantic search
+codex-acp: Use Codex from ACP-compatible clients such as Zed!
+cronboard: Terminal-based dashboard for managing cron jobs locally and on servers
+ctags-lsp: LSP implementation using universal-ctags as backend
+ctre: Compile-time PCRE-compatible regular expression matcher for C++
+custom-install: Install CIA files directly to Nintendo 3DS SD card
+dbcsr: Distributed Block Compressed Sparse Row matrix library
+depot: Build your Docker images in the cloud
+devcockpit: TUI system monitor for Apple Silicon
+diffnav: Git diff pager based on delta but with a file tree
+dnspyre: CLI tool for a high QPS DNS benchmark
+docker-language-server: Language server for Dockerfiles, Compose files, and Bake files
+dotnet@9: .NET Core
+dovi_convert: Dolby Vision Profile 7 to 8.1 MKV converter
+durdraw: Versatile ASCII and ANSI Art text editor for drawing in the terminal
+e1s: TUI for managing AWS ECS, inspired by k9s
+ekphos: Terminal-based markdown research tool inspired by Obsidian
+faketty: Wrapper to exec a command in a pty, even if redirecting the output
+fastrace: Dependency-free traceroute implementation in pure C
+fence: Lightweight sandbox for commands with network and filesystem restrictions
+ffmpeg-full: Play, record, convert, and stream many audio and video codecs
+flecs: Fast entity component system for C & C++
+fnox: Fort Knox for your secrets - flexible secret management tool
+forgejo-cli: CLI tool for interacting with Forgejo
+fresh-editor: Text editor for your terminal: easy, powerful and fast
+fzf-tab: Replace zsh completion selection menu with fzf
+garage: S3 object store so reliable you can run it outside datacenters
+gastown: Multi-agent workspace manager
+ghc@9.12: Glorious Glasgow Haskell Compilation System
+git-get: Better way to clone, organize and manage multiple git repositories
+git-pages: Scalable static site server for Git forges
+git-pages-cli: Tool for publishing a site to a git-pages server
+git-xet: Git LFS plugin that uploads and downloads using the Xet protocol
+gitlogue: Cinematic Git commit replay tool
+gitnr: Create `.gitignore` using templates from TopTal, GitHub or your own collection
+global-arrays: Partitioned Global Address Space (PGAS) library for distributed arrays
+gnuastro: Astronomical data manipulation and analysis utilities and libraries
+go-air: Live reload for Go apps
+goat: General purpose AT Protocol CLI in Go
+gogcli: Google Suite CLI
+gotun: Lightweight HTTP proxy over SSH
+graphqlite: SQLite graph database extension
+gruyere: TUI program for viewing and killing processes listening on ports
+gtl: Greg's Template Library of useful classes
+gup: Update binaries installed by go install
+gwctl: CLI for managing and inspecting Gateway API resources in Kubernetes clusters
+hapless: Run and manage background processes
+hayagriva: Bibliography management tool
+hdrhistogram_c: C port of the HdrHistogram
+headscale-cli: CLI for headscale, an open-source implementation of the Tailscale control server
+headson: Head/tail for structured data
+helix-db: Open-source graph-vector database built from scratch in Rust
+helm@3: Kubernetes package manager
+hf-mcp-server: MCP Server for Hugging Face
+hindent: Haskell pretty printer
+html-to-markdown: Transforms HTML (even entire websites) into clean, readable Markdown
+ic-wasm: CLI tool for performing Wasm transformations specific to ICP canisters
+icp-cli: Development tool for building and deploying canisters on ICP
+icu4c@78: C/C++ and Java libraries for Unicode and globalization
+imagemagick-full: Tools and libraries to manipulate images in many formats
+install-nothing: Simulates installing things but doesn't actually install anything
+joyce: Emulates the Amstrad PCW on Unix, Windows and macOS
+jqfmt: Opinionated formatter for jq
+jsonfmt: Like gofmt, but for JSON files
+kagent: Kubernetes native framework for building AI agents
+kanata-tray: System tray for kanata keyboard remapper
+karakeep: CLI tool for self-hostable bookmark-everything app karakeep
+khaos: Kafka traffic simulator for observability and chaos engineering
+klog: Command-line tool for time tracking in a human-readable, plain-text file format
+kubefwd: Bulk port forwarding Kubernetes services for local development
+kubernetes-cli@1.34: Kubernetes command-line interface
+kyua: Testing framework for infrastructure software
+labctl: CLI tool for interacting with iximiuz labs and playgrounds
+ladybug: Embedded graph database built for query speed and scalability
+leetsolv: CLI tool for DSA problem revision with spaced repetition
+libaegis: Portable C implementations of the AEGIS family of encryption algorithms
+libdecor: Client-side decorations library for Wayland client
+libevdev: Wrapper library for evdev devices
+libigloo: Generic C framework used and developed by the Icecast project
+libks: Foundational support for signalwire C products
+libthai: Thai language support library
+lispkit: Scheme framework for extension and scripting languages on macOS and iOS
+litra: Control Logitech Litra lights from the command-line
+llhttp: Port of http_parser to llparse
+mac-cleanup-go: TUI macOS cleaner that scans caches/logs and lets you select what to delete
+macchanger: Change your mac address, for macOS
+magics: ECMWF's meteorological plotting software
+maigret: Collect a dossier on a person by username from thousands of sites
+mail-deduplicate: CLI to deduplicate mails from mail boxes
+mapscii: Whole World In Your Console
+matcha: Daily digest generator for your RSS feeds
+mbedtls@3: Cryptographic & SSL/TLS library
+mcp-scan: Constrain, log and scan your MCP connections for security vulnerabilities
+mdfried: Terminal markdown viewer
+minizign: Minisign reimplemented in Zig
+mistral-vibe: Minimal CLI coding agent
+mitama-cpp-result: Provides `result<T, E>` and `maybe<T>` and monadic functions for them
+mlx-c: C API for MLX
+mole: Deep clean and optimize your Mac
+mq: Jq-like command-line tool for markdown processing
+mufetch: Neofetch-style music cli
+nativefiledialog-extended: Native file dialog library with C and C++ bindings
+neo4j-mcp: Neo4j official Model Context Protocol server for AI tools
+netshow: Interactive network connection monitor with friendly service names
+nkt: TUI for fast and simple interacting with your BibLaTeX database
+octodns: Tools for managing DNS across multiple providers
+openskills: Universal skills loader for AI coding agents
+oxfmt: High-performance formatting tool for JavaScript and TypeScript
+pake: Turn any webpage into a desktop app with Rust with ease
+papeer: Convert websites into eBooks and Markdown
+papis: Powerful command-line document and bibliography manager
+parqeye: Peek inside Parquet files right from your terminal
+patchpal: AI Assisted Patch Backporting Tool Frontend
+pgroll: Postgres zero-downtime migrations made easy
+phantom: CLI tool for seamless parallel development with Git worktrees
+php@8.4: General-purpose scripting language
+pipewire: Server and user space API to deal with multimedia pipelines
+pixlet: App runtime and UX toolkit for pixel-based apps
+pocket-tts: Text-to-speech application designed to run efficiently on CPUs
+pvetui: Terminal UI for Proxmox VE
+py7zr: 7-zip in Python
+qo: Interactive minimalist TUI to query JSON, CSV, and TSV using SQL
+qqqa: Fast, stateless LLM for your shell: qq answers; qa runs commands
+rad: Modern CLI scripts made easy
+radicle: Sovereign code forge built on Git
+ralph-orchestrator: Multi-agent orchestration framework for autonomous AI task completion
+redis@8.2: Persistent key-value database, with built-in net interface
+redu: Ncdu for your restic repository
+repeater: Flashcard program that uses spaced repetition
+resterm: Terminal client for .http/.rest files with HTTP, GraphQL, and gRPC support
+rig-r: R Installation Manager
+rmrfrs: Filesystem cleaning tool
+rockcraft: Tool to create OCI images using the language from Snapcraft and Charmcraft
+ruby@3.4: Powerful, clean, object-oriented scripting language
+rumdl: Markdown Linter and Formatter written in Rust
+rv-r: Declarative R package manager
+sandvault: Run AI agents isolated in a sandboxed macOS user account
+save3ds_fuse: Extract/Import/FUSE for 3DS save/extdata/database
+shiki: Beautiful yet powerful syntax highlighter
+signalwire-client-c: SignalWire C Client SDK
+slicot: Fortran subroutines library for systems and control
+snitch: Prettier way to inspect network connections
+spiffe-helper: Tool that can be used to retrieve and manage SVIDs on behalf of a workload
+strands-agents-sops: Standard Operating Procedures for AI agents using natural language
+superseedr: BitTorrent Client in your Terminal
+svt-vp9: Scalable Video Technology for VP9 Encoder
+svu: Semantic version utility
+talm: Manage Talos Linux configurations the GitOps way
+termshot: Creates screenshots based on terminal command output
+tfclean: Remove applied moved block, import block, etc
+tftp-now: Single-binary TFTP server and client that you can use right now
+thorvg: Lightweight portable library used for drawing vector-based scenes and animations
+tock: Powerful time tracking tool for the command-line
+toktop: LLM usage monitor in terminal
+topydo: Todo list application using the todo.txt format
+torrra: Find and download torrents without leaving your CLI
+tpix: Simple terminal image viewer using the Kitty graphics protocol
+tree-sitter@0.25: Incremental parsing library
+treemd: TUI and CLI dual pane markdown viewer
+tronbyt-server: Manage your apps on your Tronbyt (flashed Tidbyt) completely locally
+ts_query_ls: LSP implementation for Tree-sitter's query files
+ty: Extremely fast Python type checker, written in Rust
+vacuum: World's fastest OpenAPI & Swagger linter
+vampire: High-performance theorem prover
+vibecheck: AI-powered git commit assistant written in Go
+vtsls: LSP wrapper for typescript extension of vscode
+wasm-bindgen: Facilitating high-level interactions between Wasm modules and JavaScript
+whosthere: LAN discovery tool with a modern TUI written in Go
+wifitui: Fast featureful friendly wifi terminal UI
+wik: View Wikipedia pages from your terminal
+witr: Why is this running?
+worktrunk: CLI for Git worktree management, designed for parallel AI agent workflows
+wuchale: Protobuf-like i18n from plain code
+xcp: Fast & lightweight command-line tool for managing Xcode projects, built in Swift
+xcsift: Swift tool to parse xcodebuild output for coding agents
+xleak: Terminal Excel viewer with an interactive TUI
+==> New Casks
+8bitdo-ultimate-software-v2: Control every piece of your controller
+airscroll: Smooth mouse scrolling utility
+aks-desktop: Azure Kubernetes Service desktop application
+alma: AI chat application
+amical: AI dictation app
+antigravity: AI Coding Agent IDE
+ape: Software for DNA sequence analysis and annotation
+appbox: iOS app distribution tool
+appvolume: Per-application volume control
+aquaskk@prerelease: Input method without morphological analysis
+athas: Lightweight code editor
+ausweisapp: Official eID-Client of the Federal Government of Germany
+auto-claude: Autonomous multi-session AI coding
+aya: Android ADB desktop app
+bettershot: Screen capturing and editing tool
+boltai@1: AI chat client
+butterkit: App Store screenshots editor
+cadreader: CAD drawing viewer
+captains-deck: Dual-pane file manager inspired by Norton Commander
+cardinal-search: Fastest file searching tool
+chatglm: Desktop client for the ChatGLM AI chatbot
+claudebar: Menu bar app for monitoring AI coding assistant usage quotas
+clipaste: Clipboard history manager
+codebuddy: AI-powered adaptive IDE
+codebuddy-cn: AI-powered adaptive IDE (Chinese version)
+codex-app: OpenAI's Codex desktop app for managing coding agents
+codexbar: Menu bar usage monitor for Codex and Claude
+comet: Web browser with integrated AI assistant
+commander: AI agent operator
+conar: AI-powered database and data management tool
+copilot-cli: Brings the power of Copilot coding agent directly to your terminal
+copilot-cli@prerelease: Brings the power of Copilot coding agent directly to your terminal
+crypto-native-app-ng: Encrypts and signs data on your computer and communicates with browser extension
+daruma: Track your goals using the Daruma Method
+datadog-security-cli: Datadog Security Product CLI
+digiexam: Academic testing platform with device lockdown
+disk-jockey: Disk image creator and analyser for retro computers or emulators
+djstudio@next: DAW for DJs
+dnclient: Peer-to-peer VPN client for managed nebula networks
+dotnet-sdk@9: Developer platform
+eigent: Desktop AI agent
+elegoo-slicer: Open-source slicer for FDM 3D printers
+elgato-studio: Capture and manage Elgato devices for content creation
+ethui: Ethereum development toolkit with wallet and anvil support
+excire-search: Lightroom Classic plugin with automatic keywording and advanced search
+filo: AI-powered email client designed for Gmail
+finetune: Per-application volume mixer, equalizer, and audio router
+font-amarna
+font-bbh-bartle
+font-bbh-bogle
+font-bbh-hegarty
+font-cause
+font-geom
+font-guguru-sans-code
+font-guguru-sans-code-nf
+font-gveret-levin
+font-kikai-chokoku-jis
+font-line-seed-jp
+font-myna
+font-playwrite-nz-basic
+font-playwrite-nz-basic-guides
+font-psudofont-liga-mono
+font-sekuya
+font-urw-core35
+font-zxgamut
+fontra-pak: Browser-based font editor
+fork@dev: Git client
+freeshow@beta: Presentation software
+gitfit: Micro-workouts while waiting for AI code generation
+glide: Tiling window manager with tree layouts
+glkvm: App for controlling GL.iNet KVM devices
+gonhanh: Vietnamese input method engine
+hyperwhisper: AI-powered speech-to-text transcription
+hytale: Official Hytale Launcher
+impactor: Sideloading application for iOS/tvOS
+infinidesk: Create multiple virtual desktops, each with unique files, wallpaper and widgets
+ipaverse: Tool for downloading and managing iOS apps from the App Store
+karing: Proxy utility
+kimi: AI chat assistant from Moonshot
+kitlangton-hex: Voice-to-text transcription and paste tool
+kogiqa: UI automation tool using natural language descriptions
+kubeterm: Kubernetes graphical management tool
+locu: Daily planner and focus timer
+lolgato: Enhances control over Elgato lights
+m32-edit: Remote control for Midas M32 audio consoles
+macdown-3000: Markdown editor with live preview and syntax highlighting
+mace: Simplify compliance baseline creation, auditing, and management
+maestro: AI agent command center
+maru-jan: Play japanese mahjong online
+mcpbundler: MCP servers and Agent skills management app
+meituxiuxiu: Photo editing and beautification software
+middledrag: Middle-click and middle-drag via three-finger trackpad gestures
+monocle-app: Window dimming utility
+monologue: AI voice dictation that adapts to your writing style
+mos@beta: Smooths scrolling and set mouse scroll directions independently
+motionik: Screen recording software
+mountmate: Menubar app to easily manage external drives
+mozregression-gui: Interactive regression range finder for Firefox and other Mozilla products
+mpluginmanager: Installer for MeldaProduction audio plugins
+mstystudio: AI platform with local and online models
+nani: AI-powered translator
+nanoleaf: Control your Nanoleaf lights
+nessie-app: Knowledge base from AI chats
+notepadexe: Lightweight code editor
+novation-components: Manager and updater for Novation hardware
+novation-play: Virtual instrument for Novation Launchkey MK4 hardware
+okta-verify: Identity verification provider
+opencode-desktop: AI coding agent desktop client
+oracle-data-modeler: Graphical tool for data modeling tasks
+papercut-mobility-print-client: Client for printing to PaperCut Mobility Print queues
+plasticity: 3D modeling software for concept artists and designers
+plaud: AI note-taking for online meetings, phone calls, and in-person conversations
+portalbox: Share a region of your screen in video calls
+posturr: Posture monitoring app
+proscoreboard: Scoreboard software
+provideoplayer: Presentation software
+qianwen: AI assistant and chatbot powered by Alibaba's Qwen model
+qqnews: Tencent News client
+repobar: Menu bar dashboard for GitHub repository health
+retrace: Local-first screen recording and search application
+rocketman-choices-packager: Utility for customising installer package choices
+seam-app: Productivity-first Dynamic Island for your Notch
+shell360: Cross-platform SSH & SFTP client
+sky: Bluesky Social client
+smartsheet: Spreadsheet-style project management solution
+snapmaker-orca: Slicing software for Snapmaker 3D printers, a fork of OrcaSlicer
+sodamusic: Music app
+sourcegit: Git GUI client
+stirling-pdf: PDF utility
+stremio@beta: Open-source media center
+stremioservice: Companion app for Stremio Web
+superset: Terminal for orchestrating agents
+support: Menu bar app for user and help desk support
+swiftdialog: Admin utility that presents custom dialogs or messages from shell scripts
+taobao: Online Shopping Client
+taphouse: Native GUI for Homebrew package management
+transmission@beta: Open-source BitTorrent client
+trimmy: Paste-once, run-once clipboard cleaner for terminal snippets
+tritium: Integrated drafting environment for legal professionals
+typeless: AI voice dictation that turns speech into polished text
+uuremote: NetEase UU remote desktop access and control tool
+vcamapp: Face-tracking virtual avatar app
+visualdiffer: Visually compare folders and files
+vocaster-hub: Interface controller for Focusrite Vocaster One and Two
+wailbrew: Manage Homebrew packages with a UI
+waveforms: Virtual instrument suite for Digilent Test and Measurement devices
+white-rabbit: SVG utility and optimiser
+whodb: Database management tool with AI-powered features
+whyfi: Menu bar Wi-Fi monitor and diagnostics app
+wireless-workbench: Desktop app for RF coordination and wireless system management
+wiso-steuer-2026: Tax declaration for the fiscal year 2025
+wispr-flow: Voice-to-text dictation with AI-powered auto-editing
+xmlmind-editor: Strictly validating near WYSIWYG XML editor
+yandextelemost: Yandex video calls and meetings platform
+yingfu-online: Education app for teens
+yoink: Drag and drop utility
+zedis: Redis GUI built with Rust and GPUI
+zo: Friendly personal server
+
+You have 22 outdated formulae installed.
+
+==> Fetching downloads for: wget
+✔︎ Bottle Manifest wget (1.25.0)                      Downloaded   15.9KB/ 15.9KB
+✔︎ Bottle Manifest libunistring (1.4.1)               Downloaded    7.3KB/  7.3KB
+✔︎ Bottle Manifest libidn2 (2.3.8)                    Downloaded   12.8KB/ 12.8KB
+✔︎ Bottle Manifest gettext (1.0)                      Downloaded   13.7KB/ 13.7KB
+✔︎ Bottle libidn2 (2.3.8)                             Downloaded  311.6KB/311.6KB
+✔︎ Bottle wget (1.25.0)                               Downloaded    1.6MB/  1.6MB
+✔︎ Bottle libunistring (1.4.1)                        Downloaded    1.9MB/  1.9MB
+✔︎ Bottle gettext (1.0)                               Downloaded   10.3MB/ 10.3MB
+==> Installing dependencies for wget: libunistring, gettext and libidn2
+==> Installing wget dependency: libunistring
+==> Pouring libunistring--1.4.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libunistring/1.4.1: 59 files, 5.8MB
+==> Installing wget dependency: gettext
+==> Pouring gettext--1.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/1.0: 2,499 files, 35.4MB
+==> Installing wget dependency: libidn2
+==> Pouring libidn2--2.3.8.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libidn2/2.3.8: 80 files, 951.9KB
+==> Installing wget
+==> Pouring wget--1.25.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/wget/1.25.0: 92 files, 4.7MB
+==> Running `brew cleanup wget`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> `brew cleanup` has not been run in the last 30 days, running now...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/portable-ruby-3.4.8.arm64_big_sur.bottle.tar.gz... (12.2MB)
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/portable-ruby-3.4.5.arm64_big_sur.bottle.tar.gz... (12.1MB)
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/api-source/Homebrew/homebrew-cask/b05969c617aabcd322f90676bf90ce295c3c6bca/Cask/docker-desktop.rb... (5.1KB)
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/bootsnap/c91fc409058d974d5067ab3ee3b72377330aa4062a73846994948dc24850a65f... (635 files, 5.4MB)
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/bootsnap/118b6dfb18563197d4ab01806eddb3405e8181f8c2dd7860c090a25be75be0f3... (656 files, 5.6MB)
+Removing: /Users/ramachauhan/Library/Caches/Homebrew/bootsnap/9a18177e19f3a66379884186e4d111fa0236bf8b873de2e480bdb13d2d10bdec... (646 files, 5.6MB)
+Removing: /Users/ramachauhan/Library/Logs/Homebrew/eksctl... (117B)
+Removing: /Users/ramachauhan/Library/Logs/Homebrew/openssl@3... (64B)
+Removing: /Users/ramachauhan/Library/Logs/Homebrew/ca-certificates... (64B)
+Removing: /Users/ramachauhan/Library/Logs/Homebrew/node... (64B)
+
+-----------downloading files -------------
+ramachauhan@Ramas-MacBook-Air ~ % wget https://example.com/sample.txt
+
+--2026-02-05 09:13:26--  https://example.com/sample.txt
+Resolving example.com (example.com)... 104.18.26.120, 104.18.27.120
+Connecting to example.com (example.com)|104.18.26.120|:443... connected.
+Unable to establish SSL connection.
+
+-----------Changing Permissions---------------
+
+ramachauhan@Ramas-MacBook-Air ~ % touch secure.txt
+ramachauhan@Ramas-MacBook-Air ~ % chomd 44  secure.txt
+zsh: command not found: chomd
+ramachauhan@Ramas-MacBook-Air ~ % chmod 444 secure.txt
+ramachauhan@Ramas-MacBook-Air ~ % ls -l secure.txt
+-r--r--r--@ 1 ramachauhan  staff  0  5 Feb 09:15 secure.txt
+
+
+----------7. Working with Environment Variables---------------
+
+ramachauhan@Ramas-MacBook-Air ~ % export MY_VAR="Hello,Linux!"
+dquote> echo $MY_VAR
+dquote> mkdir linux-assignment
+dquote> mv test_dir linux-assignment/
+dquote> mv unzipped_dir linux-assignment/
+dquote> mv secure.txt linux-assignment/
+dquote> mv test_dir.zip linux-assignment/
+dquote> cd linux-assignment
+dquote> git init
+dquote> code.
+dquote>
